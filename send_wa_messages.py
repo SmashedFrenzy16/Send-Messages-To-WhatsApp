@@ -16,6 +16,13 @@ askclose = input("Do you want to close WhatsApp after sending message? (y/n): ")
 
 if askclose == "y" or askclose == "Y":
   
+  global closing
+  global ques
+  global mess
+  global hr
+  global mn
+  global close dur
+  
   closing = True
   
   closedur = float(input("Enter the closing amount duration: "))
@@ -36,5 +43,26 @@ if askclose == "y" or askclose == "Y":
   
 else:
   
+  global closing
+  global ques
+  global mess
+  global hr
+  global mn
+  global askclose
+  
   closing = False
+  
+  if ques == "p":
+  
+    pywhatkit.sendwhatmsg("<Enter Phone Number Here>", mess, hr, mn)
+  
+  elif ques == "g":
+    
+      pywhatkit.sendwhatmsg_to_group("<Enter Group ID Here>", mess, hr, mn)
+    
+  else:
+    
+      print("Sorry, that input was not recognized. Program now terminating.")
+    
+      sys.exit()
 
