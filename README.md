@@ -10,3 +10,5 @@ NOTE: Replace any mentions of `<Enter Phone Number Here>` with your private dire
 - There you’ll see a link. Copy the link. The suffix part of the link is the id of the group.
 
 - (These steps were taken from towardsdatascience.com hosted by medium.com: https://towardsdatascience.com/automate-whatsapp-messages-with-python-in-3-steps-d64cf0de4539)
+
+ANOTHER NOTE: Please make sure that you are logged into WhatsApp Web because the `pywhatkit` module (`pip install pywhatkit`) requires that.
